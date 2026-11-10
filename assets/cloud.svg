@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="t d">
+  <title id="t">Cloud hosting illustration</title>
+  <desc id="d">A laptop and a phone connected over HTTPS to a cloud that serves a static website.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf3dc"/>
+      <stop offset="1" stop-color="#e3eef7"/>
+    </linearGradient>
+    <linearGradient id="cloudFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d6e6f5"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f9c96b"/>
+      <stop offset="1" stop-color="#f9c96b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="480" height="320" rx="24" fill="url(#sky)"/>
+  <circle cx="400" cy="70" r="70" fill="url(#sun)"/>
+  <circle cx="400" cy="70" r="26" fill="#f6b84f" opacity="0.85"/>
+
+  <!-- hills -->
+  <path d="M0 270 C80 230 140 250 200 262 C270 276 330 236 400 246 C440 252 465 262 480 268 V320 H0 Z" fill="#b9d7c6"/>
+  <path d="M0 290 C90 266 170 286 250 292 C330 298 400 278 480 288 V320 H0 Z" fill="#8fbfa6"/>
+
+  <!-- cloud -->
+  <g transform="translate(150 40)">
+    <path d="M40 110 C10 110 0 80 22 66 C18 36 52 22 72 38 C82 10 128 6 142 36 C170 24 200 46 192 74 C214 80 214 110 186 110 Z"
+          fill="url(#cloudFill)" stroke="#1f3a68" stroke-width="4" stroke-linejoin="round"/>
+    <!-- mini website inside cloud -->
+    <rect x="62" y="56" width="84" height="44" rx="6" fill="#ffffff" stroke="#1f3a68" stroke-width="3"/>
+    <rect x="62" y="56" width="84" height="11" rx="5" fill="#1f3a68"/>
+    <rect x="70" y="74" width="40" height="5" rx="2.5" fill="#f2a541"/>
+    <rect x="70" y="84" width="66" height="4" rx="2" fill="#9db7d6"/>
+    <rect x="70" y="92" width="52" height="4" rx="2" fill="#9db7d6"/>
+  </g>
+
+  <!-- connection lines -->
+  <g stroke="#2f7fb8" stroke-width="3" stroke-dasharray="7 7" fill="none" stroke-linecap="round">
+    <path d="M128 208 C150 180 180 165 205 152"/>
+    <path d="M360 214 C340 186 318 168 292 152"/>
+  </g>
+
+  <!-- lock badge -->
+  <g transform="translate(222 160)">
+    <rect x="0" y="0" width="36" height="28" rx="6" fill="#2e8b6e"/>
+    <path d="M9 0 V-7 A9 9 0 0 1 27 -7 V0" fill="none" stroke="#2e8b6e" stroke-width="4"/>
+    <circle cx="18" cy="13" r="4" fill="#fff"/>
+    <rect x="16.5" y="14" width="3" height="8" rx="1.5" fill="#fff"/>
+  </g>
+  <text x="240" y="208" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#1f3a68">HTTPS</text>
+
+  <!-- laptop -->
+  <g transform="translate(58 206)">
+    <rect x="8" y="0" width="96" height="58" rx="6" fill="#ffffff" stroke="#1f3a68" stroke-width="4"/>
+    <rect x="18" y="10" width="76" height="8" rx="3" fill="#2f7fb8"/>
+    <rect x="18" y="24" width="50" height="5" rx="2.5" fill="#9db7d6"/>
+    <rect x="18" y="34" width="62" height="5" rx="2.5" fill="#9db7d6"/>
+    <path d="M0 62 H112 L104 72 H8 Z" fill="#1f3a68"/>
+  </g>
+
+  <!-- phone -->
+  <g transform="translate(350 206)">
+    <rect x="0" y="0" width="40" height="70" rx="8" fill="#ffffff" stroke="#1f3a68" stroke-width="4"/>
+    <rect x="7" y="10" width="26" height="6" rx="3" fill="#2f7fb8"/>
+    <rect x="7" y="22" width="20" height="4" rx="2" fill="#9db7d6"/>
+    <rect x="7" y="30" width="24" height="4" rx="2" fill="#9db7d6"/>
+    <circle cx="20" cy="60" r="3" fill="#1f3a68"/>
+  </g>
+</svg>

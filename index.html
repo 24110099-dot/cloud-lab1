@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lab 01 - My First Cloud Website by Nguyễn Quốc Bảo Khang (24110099), Introduction to Cloud Computing.">
+  <title>My First Cloud Website</title>
+  <link rel="icon" href="assets/cloud.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header & navigation ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img src="assets/cloud.svg" alt="" class="brand-logo" width="40" height="27">
+        <span>My First Cloud Website</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#cloud-computing">Cloud Computing</a></li>
+          <li><a href="#cloud-services">Cloud Services</a></li>
+          <li><a href="#deployment">Deployment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Introduction to Cloud Computing · Lab 01</p>
+          <h1>My First Cloud Website</h1>
+          <p class="lead">A static HTML/CSS website deployed to the cloud and served publicly over HTTPS.</p>
+          <ul class="student-card" aria-label="Student information">
+            <li><span>Student</span><strong>Nguyễn Quốc Bảo Khang</strong></li>
+            <li><span>Student ID</span><strong>24110099</strong></li>
+            <li><span>Course</span><strong>Introduction to Cloud Computing</strong></li>
+          </ul>
+        </div>
+        <figure class="hero-figure">
+          <img src="assets/cloud.svg" alt="Illustration of a laptop and a phone reaching a cloud-hosted website over HTTPS" width="480" height="320">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== About Me ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>01</span> About Me</h2>
+        <div class="about-grid">
+          <div class="card">
+            <p>
+              Hello! My name is <strong>Nguyễn Quốc Bảo Khang</strong> and my student ID is
+              <strong>24110099</strong>. I am an Information Technology student at
+              Ho Chi Minh City University of Technology and Education (HCMUTE), currently
+              taking the <em>Introduction to Cloud Computing</em> course.
+            </p>
+            <p>
+              I enjoy building things for the web and learning how real-world systems run at scale.
+              This lab is my first step from writing code on my own laptop to publishing it on
+              cloud infrastructure that anyone can reach through a browser.
+            </p>
+          </div>
+          <div class="card facts">
+            <h3>Quick facts</h3>
+            <dl>
+              <dt>Full name</dt><dd>Nguyễn Quốc Bảo Khang</dd>
+              <dt>Student ID</dt><dd>24110099</dd>
+              <dt>Course</dt><dd>Introduction to Cloud Computing</dd>
+              <dt>Lecturer</dt><dd>Trương Thị Ngọc Phượng</dd>
+              <dt>Interests</dt><dd>Web development, cloud services, automation</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cloud Computing ===== -->
+    <section id="cloud-computing" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span>02</span> Cloud Computing</h2>
+        <div class="card prose">
+          <p>
+            In my own words, cloud computing means renting computing power, storage and software
+            from a provider over the Internet instead of buying and maintaining my own servers.
+            When I need a resource, I request it through a web console, a command-line tool or an
+            API, and it is ready in minutes. When I no longer need it, I release it and stop paying.
+          </p>
+          <p>
+            The provider keeps huge pools of hardware in its data centers and shares them between
+            many customers, so a small team can use the same reliable infrastructure as a large
+            company. Capacity can grow during a busy period, such as course registration week,
+            and shrink again afterwards. Every resource is measured, so cost follows actual usage
+            (OpEx) rather than a large upfront purchase (CapEx).
+          </p>
+        </div>
+
+        <h3 class="sub-title">The five essential characteristics (NIST)</h3>
+        <ul class="chip-list">
+          <li>On-demand self-service</li>
+          <li>Broad network access</li>
+          <li>Resource pooling</li>
+          <li>Rapid elasticity</li>
+          <li>Measured service</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Cloud Services ===== -->
+    <section id="cloud-services" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>03</span> Cloud Services</h2>
+        <p class="section-intro">
+          The three service models differ in how much of the technology stack the provider manages
+          and how much control stays with the customer.
+        </p>
+
+        <div class="service-grid">
+          <article class="card service iaas">
+            <p class="tag">IaaS</p>
+            <h3>Infrastructure as a Service</h3>
+            <p>
+              The provider supplies virtual machines, storage volumes and networks. I still install
+              and manage the operating system, runtime and application myself, so I get the most
+              control but also the most work. Typical users are system administrators and architects.
+            </p>
+            <p class="example"><strong>Example:</strong> Amazon EC2 — launch a virtual Linux server and configure it yourself.</p>
+          </article>
+
+          <article class="card service paas">
+            <p class="tag">PaaS</p>
+            <h3>Platform as a Service</h3>
+            <p>
+              The provider manages servers, operating system and runtime. Developers only upload
+              their code and data, and the platform handles deployment, scaling and patching.
+              Less OS-level control, but much faster delivery.
+            </p>
+            <p class="example"><strong>Example:</strong> AWS Elastic Beanstalk — deploy a Python or Node.js web app without managing servers.</p>
+          </article>
+
+          <article class="card service saas">
+            <p class="tag">SaaS</p>
+            <h3>Software as a Service</h3>
+            <p>
+              A complete, ready-to-use application delivered over the Internet. End users simply
+              sign in through a browser or app; the provider operates everything underneath,
+              including updates and backups.
+            </p>
+            <p class="example"><strong>Example:</strong> Microsoft 365 — email, Word and Teams used directly in the browser.</p>
+          </article>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Who manages each layer?</caption>
+            <thead>
+              <tr><th scope="col">Layer</th><th scope="col">IaaS</th><th scope="col">PaaS</th><th scope="col">SaaS</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Application</th><td class="you">Customer</td><td class="you">Customer</td><td class="prov">Provider</td></tr>
+              <tr><th scope="row">Runtime / OS</th><td class="you">Customer</td><td class="prov">Provider</td><td class="prov">Provider</td></tr>
+              <tr><th scope="row">Virtualization &amp; hardware</th><td class="prov">Provider</td><td class="prov">Provider</td><td class="prov">Provider</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Deployment Information ===== -->
+    <section id="deployment" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span>04</span> Deployment Information</h2>
+        <div class="deploy-grid">
+          <div class="card">
+            <dl class="deploy-list">
+              <dt>Selected option</dt><dd>B — GitHub Pages</dd>
+              <dt>Hosting type</dt><dd>Static website hosting (HTML, CSS, images only — no backend or database)</dd>
+              <dt>Repository</dt><dd><a href="https://github.com/Ting2509/cloud-lab1" target="_blank" rel="noopener">github.com/Ting2509/cloud-lab1</a></dd>
+              <dt>Branch / folder</dt><dd><code>main</code> / <code>(root)</code></dd>
+              <dt>Public URL</dt><dd><a href="https://ting2509.github.io/cloud-lab1/" target="_blank" rel="noopener">https://ting2509.github.io/cloud-lab1/</a></dd>
+            </dl>
+          </div>
+          <div class="card">
+            <h3>How it was deployed</h3>
+            <ol class="steps">
+              <li>Created <code>index.html</code>, <code>style.css</code> and the <code>assets/</code> folder locally.</li>
+              <li>Pushed the files to a public GitHub repository named <code>cloud-lab1</code>.</li>
+              <li>Opened <em>Settings → Pages → Deploy from a branch</em> and selected <code>main</code> / <code>(root)</code>.</li>
+              <li>GitHub built the site and published it on its global CDN with a free HTTPS certificate.</li>
+              <li>Verified the URL in a normal and an incognito window on desktop and mobile.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="flow" aria-label="Request flow">
+          <div class="flow-step">Browser</div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">HTTPS request</div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">GitHub Pages CDN</div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="flow-step">index.html · style.css · assets/</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Nguyễn Quốc Bảo Khang · 24110099 · Introduction to Cloud Computing — Lab 01</p>
+      <p><a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Close the mobile menu after a navigation link is tapped.
+    document.querySelectorAll('.site-nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        document.getElementById('nav-toggle').checked = false;
+      });
+    });
+  </script>
+</body>
+</html>
